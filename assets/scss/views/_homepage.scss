@@ -79,6 +79,7 @@
 }
 img.responsive {
 	height: auto;
+	border: 5px solid black;
 }
 
 * {
@@ -89,7 +90,7 @@ img.responsive {
 
 .List {
 	// Block SCSS Version
-
+	color: white;
 	padding: 20px;
 	text-align: center;
 
