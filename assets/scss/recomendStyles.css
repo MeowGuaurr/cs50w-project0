@@ -20,7 +20,7 @@ div li {
   margin: 2px;
 }
 
-.bb::before, .bb::after, .bb {
+.bb, .bb::before, .bb::after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -34,24 +34,32 @@ div li {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
-  box-shadow: inset 0 0 0 rgba(33, 31, 43, 0.822) 1px;
+  -webkit-box-shadow: inset 0 0 0 rgba(33, 31, 43, 0.822) 1px;
+          box-shadow: inset 0 0 0 rgba(33, 31, 43, 0.822) 1px;
 }
+
 .bb::before, .bb::after {
   content: "";
   z-index: -1;
   margin: -5%;
-  box-shadow: inset 0 0 0 2px;
-  animation: clipMe 8s linear infinite;
+  -webkit-box-shadow: inset 0 0 0 2px;
+          box-shadow: inset 0 0 0 2px;
+  -webkit-animation: clipMe 8s linear infinite;
+          animation: clipMe 8s linear infinite;
 }
+
 .bb::before {
-  animation-delay: -4s;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
 }
+
 .bb:hover::after, .bb:hover::before {
   background-color: rgba(78, 135, 168, 0.89);
 }
 
-@keyframes clipMe {
-  0%, 100% {
+@-webkit-keyframes clipMe {
+  0%,
+  100% {
     clip: rect(0px, 220px, 2px, 0px);
   }
   25% {
@@ -65,4 +73,19 @@ div li {
   }
 }
 
+@keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0px, 220px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220px, 0px);
+  }
+  50% {
+    clip: rect(218px, 220px, 220px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220px, 220px, 218px);
+  }
+}
 /*# sourceMappingURL=recomendStyles.css.map */

@@ -1,8 +1,13 @@
 * {
 	font-family: "Raleway", sans-serif;
-	background: rgba(33, 31, 43, 0.822);
 }
 
+body {
+	background: url(https://wallpaper.dog/large/5505159.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 540px;
+}
 div li {
 	list-style-type: none;
 	margin: 2px;
@@ -54,7 +59,7 @@ $codepen-logo-path: url("//blog.codepen.io/wp-content/uploads/2012/06/Button-Whi
 	&:hover {
 		&::after,
 		&::before {
-			background-color: rgba(0, 0, 0, 0.6);
+			background-color: rgba(78, 135, 168, 0.89);
 		}
 	}
 }
