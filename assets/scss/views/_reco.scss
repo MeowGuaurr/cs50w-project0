@@ -1,0 +1,88 @@
+* {
+	font-family: "Raleway", sans-serif;
+}
+
+body {
+	background: url(https://wallpapercave.com/wp/wp3085091.jpg);
+	background-size: cover;
+}
+
+.tlight {
+	margin-top: 50px;
+	position: relative;
+	font-size: 2rem;
+	letter-spacing: 10px;
+	color: rgba(130, 3, 189, 0.849);
+	text-align: center;
+	-webkit-box-reflect: below 1px
+		linear-gradient(transparent, rgba(130, 3, 189, 0.849));
+	line-height: 0.7em;
+	outline: none;
+	animation: animate 5s linear infinite;
+}
+
+.container-table {
+	width: 90%;
+	background: rgba(96, 16, 133, 0.267);
+	margin: 50px auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 40px;
+	margin-top: 100px;
+}
+
+.table__tittle {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background: rgba(96, 16, 133, 0.6);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.table__header,
+.table__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 13px;
+	color: white;
+}
+
+.table__header {
+	font-weight: bold;
+}
+
+@keyframes animate {
+	0%,
+	18%,
+	20%,
+	50.1%,
+	60%,
+	65.1%,
+	80%,
+	90.1%,
+	92% {
+		color: rgba(130, 3, 189, 0.849);
+		box-shadow: none;
+	}
+
+	18.1%,
+	20.1%,
+	30%,
+	50%,
+	60.1%,
+	65%,
+	80.1%,
+	90%,
+	92.1%,
+	100% {
+		color: white;
+		text-shadow: 0 0 10px rgba(176, 45, 236, 0.952),
+			0 0 20px rgba(176, 45, 236, 0.952), 0 0 40px rgba(176, 45, 236, 0.952),
+			0 0 80px rgba(176, 45, 236, 0.952), 0 0 160px rgba(176, 45, 236, 0.952);
+	}
+}
