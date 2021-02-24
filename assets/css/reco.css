@@ -16,7 +16,7 @@ body {
 .tlight {
   margin-top: 50px;
   position: relative;
-  font-size: 2rem;
+  font-size: 20px;
   letter-spacing: 10px;
   color: rgba(130, 3, 189, 0.849);
   text-align: center;
@@ -45,7 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 .table__header,

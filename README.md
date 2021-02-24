@@ -15,6 +15,4 @@
 
 ### Description
 
-    This project consists in a personal resume that
-    can be used as a way to know myself in a job
-    opportunity for a recruiter.
+    This project is about my personal homepage, it contains a scss and css directory where all the stylesheets are stored, also an index wich is the home, gallery that shows images of important people for me, hobbies and recomendations, this last one has my friend's homepage project info.
